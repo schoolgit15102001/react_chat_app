@@ -1,0 +1,237 @@
+.popup-question{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-popup-05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-question-modal{
+    border-radius: 5px;
+    width: 350px;
+    background-color: var(--white);
+}
+
+
+.popup-question-modal .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-bottom: 1px solid var(--bd-popup-01);
+}
+
+.popup-question-modal .header .icon{
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.popup-question-modal .header .icon:hover{
+    color: var(--cl-warning);
+}
+.popup-question-modal .body{
+    padding: 5px 10px 10px 10px;
+}
+.popup-question-modal .body .title{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.popup-question-modal .body .btn-group{
+    float: right;
+   
+}
+.popup-question-modal .body .clear{
+    clear: both;
+   
+}
+.popup-question-modal .body .btn{
+    
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    transition: 0.2s;
+    font-weight: 700;
+}
+
+.popup-question-modal .body .btn.yes{
+    background-color: var(--bg-popup-01);
+    color: var(--cl-warning);
+}
+.popup-question-modal .body .btn.yes:hover{
+    background-color:var(--bg-popup-02);
+}
+
+
+.popup-question-modal .body .btn.no{
+    background-color: var(--bg-popup-03);
+    color: var(--cl-popup-01);
+}
+.popup-question-modal .body .btn.no:hover{
+    background-color: var(--bg-popup-04);
+}
+
+.popup-question-modal.if{
+    height: 580px;
+    position: relative;
+}
+
+.popup-question .avt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.popup-question .username{
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.popup-question .title-info{
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.popup-question .title-gr{
+    margin-top: 10px;
+    font-size: 16px;
+    position: relative;
+    
+}
+.popup-question .title-gr .title-name{
+    color: var(--cl-info-text);
+}
+.popup-question .title-gr .title-value{
+    position: absolute;
+    top:0;
+    left: 100px;
+}
+.popup-question .btn-gr{
+    width: calc(100% - 20px);
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+
+}
+.popup-question .btn-info{
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    background-color: var(--bg-navbar);
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.popup-question .btn-info:hover{
+    background-color: var(--bg-navbar-hover);
+}
+
+.RadioButtonProfile{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.inputTextProfile {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 200;
+    font-size: 15px;
+    
+  }
+.popup-question .form-control{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.popup-question .form-control input{
+
+    margin: 0 10px;
+    border: none;
+    font-size: 45px;
+    color: var(--black);
+    background-color: var(--bd-popup-otp);
+    border-radius: 10%;
+    outline: none;
+}
+
+
+.popup-question .form-control input:focus{
+    border: 3px solid var(--login-line);
+ 
+}
+
+.form .btn.acc{
+    margin-top: 0;
+    background-color: var(--login-line);
+    color:var(--white)
+}
+
+.form .err{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.passCss-ip{
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.passCss-btn{
+    width: auto !important;
+    margin-top: 0px !important;
+    margin-left: 5px;
+}
+
+.changePass {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-user-hover);
+    width: 100%;
+    border-radius: 5px;
+  }
+ 
+  
+div.modal-content{
+    line-height: 0.6;
+}
+
+.modal-content .updatePassBtn:hover{
+    opacity:.8;
+    cursor:pointer;
+}
+.modal-content .clearPassBtn:hover{
+    opacity:.8;
+    cursor:pointer;
+}
+

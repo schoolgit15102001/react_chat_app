@@ -1,0 +1,190 @@
+@import 'https://fonts.googleapis.com/css?family=Permanent+Marker';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--background-login);
+    
+}
+
+.text-effect{
+    text-align: center;
+}
+
+.header-name {
+    font-size: 45px;
+    color: var(--white);
+    font-family: "Permanent Marker", cursive;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px var(--white), 0 0 20px var(--white), 0 0 30px var(--text-shadow-01), 0 0 40px var(--text-shadow-01), 0 0 50px var(--text-shadow-01), 0 0 60px var(--text-shadow-01), 0 0 70px var(--text-shadow-01);
+    }
+    
+    to {
+      text-shadow: 0 0 20px var(--white), 0 0 30px var(--text-shadow-02), 0 0 40px var(--text-shadow-02), 0 0 50px var(--text-shadow-02), 0 0 60px var(--text-shadow-02), 0 0 70px var(--text-shadow-02), 0 0 80px var(--text-shadow-02);
+    }
+  }
+
+.err{
+    color: var(--red);
+    margin-bottom: 15px;
+    animation: my 500ms infinite;
+}
+
+@keyframes my { 
+    0% { color: var(--red);  } 
+    50% { color: var(--white);  }
+    100% { color: var(--red);  } 
+} 
+.modal {
+    background: var(--login-form);
+    width: 400px;
+    height: 570px;
+    padding: 30px 45px;
+    box-shadow: 0 0 10px var(--box-shadow-003);
+    border-radius: 5px;
+}
+.tabs__title{
+    margin-top: 15px;
+    display: flex;
+    position: relative;
+}
+.tabs__title .line{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: var(--login-line);
+    transition: all 0.2s ease;
+}
+.tabs__title-item{
+    width: 50%;
+    padding: 16px 20px 11px 20px;
+    font-size: 18px;
+    text-align: center;
+    color: var(--login-line);
+    background-color: transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;    
+}
+.tabs__title-item:hover{
+    opacity: 1;
+} 
+.tabs__title-item.active{
+    opacity: 1;
+}
+
+.tabs__content{
+    padding-top: 15px;
+}
+
+.tabs__content-item{
+    color: var(--cl-003);
+    display: none;
+}
+.tabs__content-item.active {
+    display: block;
+}
+
+.tabs__content .form{
+    width: 100%;
+}
+
+.form-control {
+    position: relative;
+    width: 100%;
+    color: var(--white);
+}
+.form-control.radio{
+    margin-bottom: 15px;
+}
+.form-control.radio input{
+    margin-left: 5px;
+}
+
+
+.tabs__content .form .form-input{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--white);
+    font-size: 15px;
+    padding-left: 30px;
+    background-color: var(--login-form-input-bg);
+    color: var(--login-form-input);
+}
+.tabs__content .form .form-input:focus,
+.form-input:not([value=""]):not(:focus) {
+    border-bottom: 1px solid var(--login-line);
+}
+
+.form-input.date::-webkit-inner-spin-button,
+.form-input.date::-webkit-clear-button {
+  display: block;
+}
+
+.form-input.date::-webkit-calendar-picker-indicator {
+  background-color: var(--white);
+  opacity: 1;
+  border-radius: 20%;
+  cursor: pointer;
+
+}
+
+
+.form-control .icon {
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    color: var(--white);
+    font-size: 15px;
+}
+
+.tabs__content .form .button{
+    width: 100%;
+    background-color: var(--login-button);
+    border: none;
+    outline: none;
+    height: 40px;
+    text-transform: uppercase;
+    line-height: 40px;
+    padding: 0 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+    letter-spacing: 1px;
+}
+.tabs__content .form .button:hover{
+    background-color: var(--login-button-hover);
+}
+.form-link{
+    margin-top: 15px;
+    text-align: center;
+    color: var(--login-line);
+    text-decoration: underline;
+    cursor: pointer;
+}
